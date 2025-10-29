@@ -11,3 +11,13 @@
 .btn-hover:hover {
   background-color: var(--color-brand-hover);
 }
+
+.indice {
+  & img {
+    margin: 1rem;
+  }
+  & h1 {
+    font-family: "Sora", sans-serif;
+    margin-bottom: 2.75rem;
+  }
+}

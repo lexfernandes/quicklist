@@ -9,9 +9,40 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./styles/style.css" />
     <title>quicklist</title>
-    <button class="btn btn-hover">Adicionar item</button>
   </head>
-  <body></body>
+  <body>
+    <main class="container">
+      <nav class="nav-bar">
+        <img src="./icons/Logo.svg" alt="" />
+        <h1>quicklist</h1>
+      </nav>
+      <section id="content">
+        <div class="indice">
+          <img
+            src="./icons/link button.svg"
+            alt="imagem de um seta para esquerda e um voltar"
+          />
+          <h1>Compras da semana</h1>
+        </div>
+      </section>
+      <form>
+        <div class="input">
+          <input
+            class="field"
+            type="text"
+            name="list"
+            id="list"
+            placeholder="Adicione um novo item"
+          />
+          <button class="btn btn-hover">Adicionar item</button>
+        </div>
+      </form>
+    </main>
+  </body>
 </html>

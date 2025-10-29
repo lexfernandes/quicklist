@@ -1,0 +1,21 @@
+.field {
+  width: 429px;
+  padding: 11px 18px;
+  border: 2px solid var(--border-primary);
+  border-radius: 12px;
+  font: var(--label-font);
+  outline: none; /* remove borda azul padrão do navegador */
+}
+
+.field:hover {
+  border: 2px solid var(--border-hover);
+}
+
+.field:focus {
+  border: 2px solid var(--color-brand-hover);
+  color: var(--content-primary);
+  transition: 0.3s ease;
+}
+.field:focus::placeholder {
+  color: var(--content-primary);
+}
