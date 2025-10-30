@@ -9,40 +9,35 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="./styles/style.css" />
     <title>quicklist</title>
   </head>
   <body>
-    <main class="container">
-      <nav class="nav-bar">
-        <img src="./icons/Logo.svg" alt="" />
-        <h1>quicklist</h1>
-      </nav>
-      <section id="content">
-        <div class="indice">
-          <img
-            src="./icons/link button.svg"
-            alt="imagem de um seta para esquerda e um voltar"
-          />
-          <h1>Compras da semana</h1>
+    <div class="img">
+      <img src="./icons/logo.svg" alt="" />
+    </div>
+    <div id="app">
+      <div id="container">
+        <div class="link">
+          <span class="link-text"><- Voltar</span>
         </div>
-      </section>
-      <form>
-        <div class="input">
-          <input
-            class="field"
-            type="text"
-            name="list"
-            id="list"
-            placeholder="Adicione um novo item"
-          />
-          <button class="btn btn-hover">Adicionar item</button>
-        </div>
-      </form>
-    </main>
+        <h1>Compras da semana</h1>
+        <form action="post" class="form-new-item">
+          <label for="main-input" class="main-input">
+            <input
+              type="text"
+              class="field"
+              id="main-input"
+              name="new-item"
+              required
+              placeholder="Adicione um novo item"
+            />
+            <button type="submit" class="submit-btn btn btn-hover">
+              <span>Adicionar item</span>
+            </button>
+          </label>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
