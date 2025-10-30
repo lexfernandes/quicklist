@@ -89,3 +89,65 @@ h1 {
   margin-top: 44px;
   margin-bottom: 40px;
 }
+.remove-btn {
+  background-color: var(--white);
+  border: none;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+.remove-btn:hover {
+  cursor: pointer;
+}
+.notification {
+  color: var(--white);
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 12px;
+  box-sizing: border-box;
+  background-color: var(--color-danger);
+  border-radius: 12px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+}
+.warn-text {
+  display: inline-block;
+  padding: 0 8px;
+  box-sizing: border-box;
+  color: var(--content-always-white);
+}
+.warn-text::before {
+  content: url("source/warning-circle-filled.png");
+  padding-right: 10px;
+  box-sizing: border-box;
+  height: 20px;
+  width: 20px;
+  vertical-align: middle;
+}
+.close-btn {
+  background-color: var(--color-danger);
+  border: none;
+  outline: none;
+  vertical-align: middle;
+}
+.close-btn:hover {
+  cursor: pointer;
+}
+.hide {
+  display: none;
+}
+.show-alert {
+  opacity: 0;
+  margin-bottom: 20px;
+  animation: showAlert 500ms ease-in-out forwards;
+}
+@keyframes showAlert {
+  to {
+    opacity: 1;
+    margin-bottom: 0px;
+  }
+}
