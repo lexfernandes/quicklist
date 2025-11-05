@@ -1,4 +1,4 @@
-.field {
+.input-field {
   width: 429px;
   height: 44px;
   padding: 11px 18px;
@@ -7,17 +7,18 @@
   font: var(--label-font);
   outline: none; /* remove borda azul padrão do navegador */
   margin-right: 16px;
+  margin-bottom: 10px;
 }
 
-.field:hover {
+.input-field:hover {
   border: 2px solid var(--border-hover);
 }
 
-.field:focus {
+.input-field:focus {
   border: 2px solid var(--color-brand-hover);
   color: var(--content-primary);
   transition: 0.3s ease;
 }
-.field:focus::placeholder {
+.input-field:focus::placeholder {
   color: var(--content-primary);
 }
